@@ -5,7 +5,6 @@ In fragment-based case management (fCM), small structured parts are modelled and
 When executing business processes, organizations must adhere to regulations, to laws, to company guidelines etc.
 Business process compliance comprises methods to verify designed and executed business processes against certain rules.
 While design-time compliance checking works well for structured process models, flexible knowledge-intensive processes have been rarely considered despite increasing interest in academia and industry.
-%Due to their potential complexity, computer-aided analysis methods, such as automated compliance checking, are desired.
 
 In this paper, we present (i) formal execution semantics of fCM models using Petri nets.
 We also cover concurrently running fragment instances and case termination.
