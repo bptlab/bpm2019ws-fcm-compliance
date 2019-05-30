@@ -16,4 +16,22 @@ We (ii) apply model checking to investigate the compliance with temporal logic r
 
 ## How to run it yourself
 
-...
+The compliance-enabled fCM system consists of three components:
+
+* [Gryphon](https://github.com/bptlab/gryphon), a web-based fCM modeller. Use the **compliance** branch.
+* [Chimera](https://github.com/bptlab/chimera), an execution engine for fCM. Use the **compliance** branch.
+* [LoLA webservice](https://github.com/bptlab/lola-webservice), a web service wrapper for LoLA.
+
+Ideally, the components are used together via [Docker Compose](https://docs.docker.com/compose/):
+
+* Clone the three repositories locally to a new folder.
+* Check out Gryphon's **compliance** branch.
+* Check out Chimera's **compliance** branch.
+* Build the Gryphon image: `docker build -t bptlab/gryphon:dev gryphon/`
+* Build the Chimera image: `cd chimera && make build_docker && cd ..`
+* Download the LoLA webservice image: `docker-compose -f lola-webservice/docker-compose.yml pull`
+* Start all three components: `docker-compose -f chimera/docker-compose.yml -f gryphon/docker-compose.yml -f lola-webservice/docker-compose.yml up -d gryphon database lola-webservice chimera`
+* Navigate to `http://localhost:3000` to access Gryphon.
+* Stop all three components: `docker-compose -f chimera/docker-compose.yml -f gryphon/docker-compose.yml -f lola-webservice/docker-compose.yml down --remove-orphans`
+
+In order to check compliance, the case model must be deployed to Chimera.
