@@ -12,7 +12,8 @@ We (ii) apply model checking to investigate the compliance with temporal logic r
 
 ## Screencast
 
-...
+<video src="bpm2019ws-compliance.webm" controls preload>
+</video>
 
 ## How to run it yourself
 
