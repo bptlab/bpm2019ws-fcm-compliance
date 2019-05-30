@@ -9,7 +9,6 @@ While design-time compliance checking works well for structured process models, 
 In this paper, we present (i) formal execution semantics of fCM models using Petri nets.
 We also cover concurrently running fragment instances and case termination.
 We (ii) apply model checking to investigate the compliance with temporal logic rules; finally, we (iii) provide an implementation based on the open-source case modeler Gryphon and the free model checker LoLA.
-\keywords{Business Process Management \and Business Process Compliance \and Case Management.
 
 ## Screencast
 
