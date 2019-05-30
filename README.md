@@ -12,8 +12,8 @@ We (ii) apply model checking to investigate the compliance with temporal logic r
 
 ## Screencast
 
-<video src="bpm2019ws-compliance.webm" controls preload>
-<a href="bpm2019ws-compliance.webm">Click here</a> to download the screencast.
+<video src="bpm2019ws-fcm-compliance.webm" controls preload>
+<a href="bpm2019ws-fcm-compliance.webm">Click here</a> to download the screencast.
 </video>
 
 ## How to run it yourself
