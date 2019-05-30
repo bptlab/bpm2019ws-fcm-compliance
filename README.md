@@ -35,3 +35,7 @@ Ideally, the components are used together via [Docker Compose](https://docs.dock
 * Stop all three components: `docker-compose -f chimera/docker-compose.yml -f gryphon/docker-compose.yml -f lola-webservice/docker-compose.yml down --remove-orphans`
 
 In order to check compliance, the case model must be deployed to Chimera.
+
+## The example case model
+
+The example [Emergency case model](Emergency.json) can be downloaded and imported into Gryphon.
